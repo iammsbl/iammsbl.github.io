@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catch the Fire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7748213433775869"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Catch the Fire</h1>
+        <div class="hud">
+            <div>Score: <span id="score">0</span></div>
+            <div>Time: <span id="time">30</span>s</div>
+            <div>Best: <span id="best">0</span></div>
+        </div>
+
+        <div id="game" class="game-area"></div>
+
+        <div class="controls">
+            <button id="startBtn">Start Game</button>
+            <button id="resetBtn">Reset Best</button>
+        </div>
+
+        <p class="hint">Click or tap the moving dot to score. Game lasts 30 seconds.</p>
+
+        <hr>
+
+        <nav class="footer-nav">
+            <button class="link-btn" onclick="showSection('about')">About</button>
+            <button class="link-btn" onclick="showSection('privacy')">Privacy Policy</button>
+            <button class="link-btn" onclick="showSection('contact')">Contact</button>
+        </nav>
+
+        <div id="info-display">
+            <section id="about" class="info-section">
+                <h3>About Catch the Fire</h3>
+                <p>Catch the Fire is a simple, fast-paced web game designed to test your reflexes. Click the moving fire emoji as many times as you can within 30 seconds!</p>
+                <button class="close-btn" onclick="hideSections()">× Close</button>
+            </section>
+
+            <section id="privacy" class="info-section">
+                <h3>Privacy Policy</h3>
+                <p>We value your privacy. This game uses <code>localStorage</code> to save your high score locally on your browser. No personal data is collected or shared.</p>
+                <button class="close-btn" onclick="hideSections()">× Close</button>
+            </section>
+
+            <section id="contact" class="info-section">
+                <h3>Contact</h3>
+                <p>Feedback? Reach out at <a href="mailto:muhammedshibilmsbl@gmail.com">muhammedshibilmsbl@gmail.com</a>.</p>
+                <button class="close-btn" onclick="hideSections()">× Close</button>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
